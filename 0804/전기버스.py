@@ -70,3 +70,27 @@ for test_case in range(0, T+1):
     
         
 """
+"""
+T = int(input())
+for tc in range(1, T+1):
+    K, N, M = map(int, intput().split())
+    
+    stop = [0] * N ...
+    last = 0
+    cnt = 0
+    while last + K < N: # 종점에 도착하지 않은 경우
+        if stop[last+K} == 1: #최대 이동후 충전기가 있으면
+            last =last + K #마지막 충전 위치 갱신
+            cnt += 1
+        else: #최대 이동후 충전기가 없으면
+        pre = last #last+1부터 last + K 사이 충전기 중 가장 먼 충전기 찾기
+        for i in range(last+K, last, -1):
+        if stop[i] == 1 :
+            last = i #충전기 번호 기록
+            cnt += 1 #충전횟수 추가
+            break
+        if pre == last: #마지막 충전위치 갱신되지 않으면
+            cnt = 0 #운행 실패, 중단
+            break
+    print(f'#{tc} {cnt}'
+"""
